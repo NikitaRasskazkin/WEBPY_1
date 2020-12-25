@@ -1,0 +1,23 @@
+{
+    "register": {
+        "type": "object",
+        "properties": {
+            "login": {"type": "string", "minLength": 2, "maxLength": 100},
+            "password": {"type": "string", "minLength": 8, "maxLength": 32}
+        },
+        "required": ["login", "password"]
+    },
+    "create_post": {
+        "type": "object",
+        "properties": {
+            "user": {
+                "login": {"type": "string", "minLength": 2, "maxLength": 100},
+                "password": {"type": "string", "minLength": 8, "maxLength": 32}
+            },
+            "post": {
+                "header": {"type": "string"},
+                "test": {"type": "string"}
+            }
+        }
+    }
+}
